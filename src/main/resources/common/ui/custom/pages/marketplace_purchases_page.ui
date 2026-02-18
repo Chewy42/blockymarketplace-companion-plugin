@@ -1,0 +1,196 @@
+group {
+  anchor: 480 420
+  background-color: #1a1a2eEE
+  layout-mode: vertical
+  padding: 20
+
+  label #title {
+    text: "My Purchases"
+    anchor: 100% 40
+    style {
+      font-size: 24
+      color: #FFD700
+      alignment: center
+    }
+  }
+
+  label #subtitle {
+    text: "Recent purchase history"
+    anchor: 100% 25
+    style {
+      font-size: 14
+      color: #888888
+      alignment: center
+    }
+  }
+
+  group #purchasesContainer {
+    anchor: 100% 250
+    layout-mode: vertical
+    background-color: #151525AA
+    padding: 10
+
+    group #purchase1Row {
+      anchor: 100% 40
+      layout-mode: left
+
+      label #purchase1Name {
+        text: ""
+        flex-weight: 1
+        style {
+          color: #FFFFFF
+          font-size: 14
+        }
+      }
+
+      label #purchase1Status {
+        text: ""
+        anchor: 100 100%
+        style {
+          color: #FFD700
+          font-size: 12
+          alignment: right
+        }
+      }
+    }
+
+    group #purchase2Row {
+      anchor: 100% 40
+      layout-mode: left
+
+      label #purchase2Name {
+        text: ""
+        flex-weight: 1
+        style {
+          color: #FFFFFF
+          font-size: 14
+        }
+      }
+
+      label #purchase2Status {
+        text: ""
+        anchor: 100 100%
+        style {
+          color: #FFD700
+          font-size: 12
+          alignment: right
+        }
+      }
+    }
+
+    group #purchase3Row {
+      anchor: 100% 40
+      layout-mode: left
+
+      label #purchase3Name {
+        text: ""
+        flex-weight: 1
+        style {
+          color: #FFFFFF
+          font-size: 14
+        }
+      }
+
+      label #purchase3Status {
+        text: ""
+        anchor: 100 100%
+        style {
+          color: #FFD700
+          font-size: 12
+          alignment: right
+        }
+      }
+    }
+
+    group #purchase4Row {
+      anchor: 100% 40
+      layout-mode: left
+
+      label #purchase4Name {
+        text: ""
+        flex-weight: 1
+        style {
+          color: #FFFFFF
+          font-size: 14
+        }
+      }
+
+      label #purchase4Status {
+        text: ""
+        anchor: 100 100%
+        style {
+          color: #FFD700
+          font-size: 12
+          alignment: right
+        }
+      }
+    }
+
+    group #purchase5Row {
+      anchor: 100% 40
+      layout-mode: left
+
+      label #purchase5Name {
+        text: ""
+        flex-weight: 1
+        style {
+          color: #FFFFFF
+          font-size: 14
+        }
+      }
+
+      label #purchase5Status {
+        text: ""
+        anchor: 100 100%
+        style {
+          color: #FFD700
+          font-size: 12
+          alignment: right
+        }
+      }
+    }
+
+    label #noPurchasesLabel {
+      text: "No purchases yet"
+      anchor: 100% 30
+      style {
+        color: #666666
+        font-size: 14
+        alignment: center
+      }
+    }
+  }
+
+  group #spacer {
+    anchor: 100% 15
+  }
+
+  group #buttonRow {
+    anchor: 100% 40
+    layout-mode: left
+
+    text-button #refreshButton {
+      text: "Refresh"
+      flex-weight: 1
+      style {
+        background-color: #2d5a87
+        color: #FFFFFF
+        font-size: 14
+      }
+    }
+
+    group #buttonSpacer {
+      anchor: 10 100%
+    }
+
+    text-button #backButton {
+      text: "Back"
+      flex-weight: 1
+      style {
+        background-color: #444444
+        color: #FFFFFF
+        font-size: 14
+      }
+    }
+  }
+}

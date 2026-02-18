@@ -1,0 +1,167 @@
+group {
+  anchor: 450 400
+  background-color: #1a1a2eEE
+  layout-mode: vertical
+  padding: 20
+
+  label #title {
+    text: "Profile & Link Status"
+    anchor: 100% 45
+    style {
+      font-size: 24
+      color: #FFD700
+      alignment: center
+    }
+  }
+
+  group #playerRow {
+    anchor: 100% 35
+    layout-mode: left
+
+    label #playerLabel {
+      text: "Player:"
+      flex-weight: 1
+      style {
+        color: #888888
+        font-size: 16
+      }
+    }
+
+    label #playerName {
+      text: "Unknown"
+      anchor: 200 100%
+      style {
+        color: #FFFFFF
+        font-size: 16
+        alignment: right
+      }
+    }
+  }
+
+  group #statusRow {
+    anchor: 100% 35
+    layout-mode: left
+
+    label #statusLabel {
+      text: "Link Status:"
+      flex-weight: 1
+      style {
+        color: #888888
+        font-size: 16
+      }
+    }
+
+    label #linkStatus {
+      text: "Not Linked"
+      anchor: 200 100%
+      style {
+        color: #FF6B6B
+        font-size: 16
+        alignment: right
+      }
+    }
+  }
+
+  group #linkedDateRow {
+    anchor: 100% 30
+    layout-mode: left
+
+    label #linkedDateLabel {
+      text: "Linked Since:"
+      flex-weight: 1
+      style {
+        color: #888888
+        font-size: 14
+      }
+    }
+
+    label #linkedDate {
+      text: ""
+      anchor: 200 100%
+      style {
+        color: #AAAAAA
+        font-size: 14
+        alignment: right
+      }
+    }
+  }
+
+  group #divider {
+    anchor: 100% 20
+  }
+
+  group #linkCodeSection {
+    anchor: 100% 90
+    layout-mode: vertical
+    background-color: #252540AA
+    padding: 10
+
+    label #linkCodeLabel {
+      text: "Your Link Code:"
+      anchor: 100% 25
+      style {
+        color: #888888
+        font-size: 14
+        alignment: center
+      }
+    }
+
+    label #linkCodeValue {
+      text: "------"
+      anchor: 100% 35
+      style {
+        color: #00FF00
+        font-size: 28
+        alignment: center
+      }
+    }
+
+    label #linkInstructions {
+      text: "Visit the marketplace website to link"
+      anchor: 100% 20
+      style {
+        color: #666666
+        font-size: 12
+        alignment: center
+      }
+    }
+  }
+
+  group #spacer {
+    anchor: 100% 10
+  }
+
+  text-button #generateCodeButton {
+    text: "Generate New Code"
+    anchor: 100% 40
+    style {
+      background-color: #2d5a87
+      color: #FFFFFF
+      font-size: 14
+    }
+  }
+
+  text-button #unlinkButton {
+    text: "Unlink Account"
+    anchor: 100% 40
+    style {
+      background-color: #872d2d
+      color: #FFFFFF
+      font-size: 14
+    }
+  }
+
+  group #spacer2 {
+    anchor: 100% 10
+  }
+
+  text-button #backButton {
+    text: "Back"
+    anchor: 100% 35
+    style {
+      background-color: #444444
+      color: #FFFFFF
+      font-size: 14
+    }
+  }
+}

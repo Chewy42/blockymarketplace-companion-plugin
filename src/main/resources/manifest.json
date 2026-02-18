@@ -1,0 +1,8 @@
+{
+  "Group": "com.blockymarketplace",
+  "Name": "BlockyMarketplace",
+  "Version": "1.0.0",
+  "Main": "com.blockymarketplace.BlockyMarketplacePlugin",
+  "Description": "SaaS marketplace plugin - sell items and ranks for real money",
+  "includesAssetPacks": true
+}

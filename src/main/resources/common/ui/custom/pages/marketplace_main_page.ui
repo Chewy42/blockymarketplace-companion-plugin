@@ -1,0 +1,82 @@
+group {
+  anchor: 400 350
+  background-color: #1a1a2eEE
+  layout-mode: vertical
+  padding: 20
+
+  label #title {
+    text: "BlockyMarketplace"
+    anchor: 100% 50
+    style {
+      font-size: 28
+      color: #FFD700
+      alignment: center
+    }
+  }
+
+  label #subtitle {
+    text: "Your marketplace hub"
+    anchor: 100% 30
+    style {
+      font-size: 14
+      color: #888888
+      alignment: center
+    }
+  }
+
+  group #spacer1 {
+    anchor: 100% 15
+  }
+
+  text-button #profileButton {
+    text: "Profile & Link Status"
+    anchor: 100% 45
+    style {
+      background-color: #2d5a87
+      color: #FFFFFF
+      font-size: 16
+    }
+  }
+
+  group #spacer2 {
+    anchor: 100% 10
+  }
+
+  text-button #shopButton {
+    text: "Browse Shop"
+    anchor: 100% 45
+    style {
+      background-color: #2d8757
+      color: #FFFFFF
+      font-size: 16
+    }
+  }
+
+  group #spacer3 {
+    anchor: 100% 10
+  }
+
+  text-button #purchasesButton {
+    text: "My Purchases"
+    anchor: 100% 45
+    style {
+      background-color: #875a2d
+      color: #FFFFFF
+      font-size: 16
+    }
+  }
+
+  group #spacer4 {
+    anchor: 100% 15
+  }
+
+  text-button #closeButton {
+    text: "Close"
+    anchor: 100% 40
+    style {
+      background-color: #444444
+      color: #FFFFFF
+      font-size: 14
+    }
+  }
+}
