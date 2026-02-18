@@ -28,7 +28,7 @@ This plugin links your Hytale server to BlockyMarketplace so players can purchas
 ```
 
 3. Copy the built jar from:
-   - `build/libs/BlockyMarketplace-1.0-SNAPSHOT.jar`
+   - `build/libs/BlockyMarketplace-1.0.1.jar`
 4. Put it in your server's `mods/` directory.
 5. Start once, then configure `plugins/BlockyMarketplace/config.json`.
 
@@ -62,4 +62,3 @@ Optional values:
 ## Release Downloads
 
 Use GitHub Releases for ready-to-use `.jar` files.
-
