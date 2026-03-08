@@ -43,6 +43,13 @@ shadowJar {
     archiveClassifier.set('')
 }
 
+// The in-game marketplace UI pages are currently incompatible with latest Hytale builds
+// and can trigger client-side "Failed to load CustomUI documents" during join.
+// We run command-based flows (/link, /redeem, webhook delivery) so exclude legacy UI docs.
+processResources {
+    exclude 'common/ui/custom/**'
+}
+
 tasks.jar {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     from sourceSets.main.resources

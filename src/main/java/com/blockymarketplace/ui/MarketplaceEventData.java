@@ -1,25 +1,15 @@
 package com.blockymarketplace.ui;
 
-import com.hypixel.hytale.codec.Codec;
-import com.hypixel.hytale.codec.KeyedCodec;
-import com.hypixel.hytale.codec.builder.BuilderCodec;
-
+/**
+ * Lightweight event payload used by legacy marketplace UI tests.
+ * <p>
+ * The runtime custom UI system is disabled for compatibility, so this class keeps
+ * only the minimal data shape expected by tests and command-layer callers.
+ */
 public class MarketplaceEventData {
+    /** Placeholder retained for compatibility with previous API/tests. */
+    public static final Object CODEC = new Object();
+
     public String action;
     public String target;
-
-    private static final KeyedCodec<String> ACTION_KEY = new KeyedCodec<>("Action", Codec.STRING);
-    private static final KeyedCodec<String> TARGET_KEY = new KeyedCodec<>("Target", Codec.STRING);
-
-    public static final BuilderCodec<MarketplaceEventData> CODEC =
-        BuilderCodec.builder(MarketplaceEventData.class, MarketplaceEventData::new)
-            .append(ACTION_KEY,
-                (obj, val) -> obj.action = val,
-                obj -> obj.action)
-            .add()
-            .append(TARGET_KEY,
-                (obj, val) -> obj.target = val,
-                obj -> obj.target)
-            .add()
-            .build();
 }

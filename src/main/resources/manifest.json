@@ -3,6 +3,7 @@
   "Name": "BlockyMarketplace",
   "Version": "1.0.1",
   "Main": "com.blockymarketplace.BlockyMarketplacePlugin",
+  "ServerVersion": "*",
   "Description": "SaaS marketplace plugin - sell items and ranks for real money",
   "includesAssetPacks": true
 }
