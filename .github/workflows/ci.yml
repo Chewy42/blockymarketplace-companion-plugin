@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: gradle
+
+      - name: Detect Hytale API jar
+        id: hytale_api
+        run: |
+          if [ -f libs/HytaleServer.jar ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Build with Gradle
+        if: steps.hytale_api.outputs.present == 'true'
+        run: ./gradlew build --no-daemon
+
+      - name: Validate Gradle configuration (no API jar in repo)
+        if: steps.hytale_api.outputs.present != 'true'
+        run: |
+          echo "libs/HytaleServer.jar not found; running lightweight Gradle validation."
+          ./gradlew help --no-daemon
